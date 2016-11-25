@@ -260,12 +260,12 @@ th {
     border: 1px solid #ddd !important;
   }
 }
-@font-face {
+/*@font-face {
   font-family: 'Glyphicons Halflings';
 
   src: url('../fonts/glyphicons-halflings-regular.eot');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
+}*/
 .glyphicon {
   position: relative;
   top: 1px;
@@ -529,10 +529,12 @@ th {
   content: "\e078";
 }
 .glyphicon-chevron-left:before {
-  content: "\e079";
+  content: "\f104";
+  font-family: 'FontAwesome';
 }
 .glyphicon-chevron-right:before {
-  content: "\e080";
+  content: "\f105";
+  font-family: 'FontAwesome';
 }
 .glyphicon-plus-sign:before {
   content: "\e081";
@@ -1281,14 +1283,16 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 13px;
+  color: #101010;
+  font-weight: bold;
 }
 h6,
 .h6 {
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 5px 0;
 }
 .lead {
   margin-bottom: 20px;
@@ -3006,26 +3010,28 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
-  padding: 10px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%!important;
-  margin-bottom: 0;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: none;
-  border: 1px solid #959595;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%!important;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    /* white-space: nowrap; */
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #959595;
+    display: table-cell;
+    vertical-align: middle;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 .btn:focus,
 .btn:active:focus,
@@ -3033,9 +3039,9 @@ select[multiple].input-lg {
 .btn.focus,
 .btn:active.focus,
 .btn.active.focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+  outline: none;
+  /*outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;*/
 }
 .btn:hover,
 .btn:focus,
@@ -6370,39 +6376,38 @@ button.close {
   left: 100%;
 }
 .carousel-control {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 15%;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-  filter: alpha(opacity=50);
-  opacity: .5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 8%;
+    font-size: 20px;
+    color: #959595;
+    text-align: center;
+    filter: alpha(opacity=50);
+    opacity: .5;
 }
 .carousel-control.left {
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-  background-repeat: repeat-x;
+  background-repeat: repeat-x;*/
 }
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
+  /*background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat-x;
+  background-repeat: repeat-x;*/
 }
 .carousel-control:hover,
 .carousel-control:focus {
-  color: #fff;
+  color: #959595;
   text-decoration: none;
   filter: alpha(opacity=90);
   outline: 0;
@@ -6471,16 +6476,16 @@ button.close {
   background-color: #fff;
 }
 .carousel-caption {
-  position: absolute;
+  /*position: absolute;
   right: 15%;
   bottom: 20px;
-  left: 15%;
+  left: 15%;*/
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  color: #959595;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  /*text-shadow: 0 1px 2px rgba(0, 0, 0, .6);*/
 }
 .carousel-caption .btn {
   text-shadow: none;

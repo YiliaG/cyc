@@ -37,10 +37,14 @@ button:focus{
     margin-bottom: 20px;
 }
 .font9 {
-	font-size: 9px;
+    font-size: 9px;
 
 }
-
+.dis-tb{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*common e*/
 
 
@@ -131,7 +135,7 @@ button:focus{
 /*header e*/
 /*footer s*/
 .d-footer{
-	    position: fixed;
+        position: fixed;
     width: 160px;
     bottom: 60px;
     left: 30px;
@@ -175,7 +179,13 @@ button:focus{
 .box-cart{
     margin-bottom: 20px;
 }
+
 /*cart e*/
+/*List s*/
+.out-stock{
+    color: #e72410;
+}
+/*List e*/
 /*Media Screen s*/
 
 @media (min-width: 769px) {
