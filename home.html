@@ -57,87 +57,56 @@
                                 </button>
                             </div>
                             <!-- cart item -->
-                            <div id="cart" class="btn-group btn-block open">
-                                <!-- <ul class="dropdown-menu pull-right">
+                            <div id="cart" class="btn-group btn-block open cart-open">
+                                <ul class="cart-down list-unstyled">
                                     <li>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <a href="#">
-                                                            <img src="http://demo.opencart.com/image/cache/catalog/demo/macbook_1-47x47.jpg" alt="MacBook" title="MacBook" class="img-thumbnail">
-                                                        </a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#">MacBook</a>
-                                                        <span>GOLD</span>
-                                                    </td>
-                                                    <td><input type="search" value="1">EA</td>
-                                                    <td class="text-right">USD &&nbsp;547.88</td>
-                                                    <td class="text-center">
-                                                        <button type="button" onclick="cart.remove('');" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-times"></i></button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <table class="table table-bordered">
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="text-right"><strong>Sub-Total</strong></td>
-                                                        <td class="text-right">455.05€</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
-                                                        <td class="text-right">1.82€</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-right"><strong>VAT (20%)</strong></td>
-                                                        <td class="text-right">91.01€</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-right"><strong>Total</strong></td>
-                                                        <td class="text-right">547.88€</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <p class="text-right">
-                                                <a href="http://demo.opencart.com/index.php?route=checkout/cart"><strong><i class="fa fa-shopping-cart"></i> View Cart</strong></a>&nbsp;&nbsp;&nbsp;
-                                                <a href="http://demo.opencart.com/index.php?route=checkout/checkout"><strong><i class="fa fa-share"></i> Checkout</strong></a>
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul> -->
-                                <ul class="hover-down cart-down list-unstyled">
-                                    <li>
-                                        <div class="row-cart">
-                                            <div class="image-cart text-center">
-                                                <a href="http://great_benefit/index.php?route=product/product&amp;product_id=42">
-                                                    <img src="http://great_benefit/image/cache/catalog/7-100x120.jpg" alt="Autumn and winter new package hip skirt" title="Autumn and winter new package hip skirt">
+                                        <div class="row row-cart">
+                                            <div class="col-xs-3">
+                                                <a href="#">
+                                                    <img class="img-responsive" src="http://www.gentlemonster.com/data/item/1402474998/2014_04_147KCg7YuA66qs7Iqk7YSw3239.jpg" alt="" title="">
                                                 </a>
                                             </div>
-                                            <div class="cart-content">
-                                                <div class="product-name text-left">
-                                                    <a href="http://great_benefit/index.php?route=product/product&amp;product_id=42">Autumn and winter new package hip skirt</a>
+                                            <div class="col-xs-7 text-left">
+                                                <div class="product-name">
+                                                    <a href="#">cyclopes ee</a>
                                                 </div>
-                                                <strong class="text-right">x 2</strong>
-                                                <span class="cart-price text-right">$180.00</span>
-                                                <div class="cart-button text-center">
-                                                    <button type="button" onclick="cart.remove('92');" title="Remove" class="btn btn-danger btn-xs"><i class="fa fa-close"></i></button>
+                                                <div>
+                                                    <strong class="input-qty mr10"><input type="text" name="" value="1">EA</strong>
+                                                    <span class="cart-price">$180.00</span>
                                                 </div>
+                                            </div>
+                                            <div class="col-xs-2 cart-remove">
+                                                <button type="button" onclick="cart.remove('');" title="Remove"><i class="fa fa-times-circle-o"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row row-cart">
+                                            <div class="col-xs-3">
+                                                <a href="#">
+                                                    <img class="img-responsive" src="http://www.gentlemonster.com/data/item/1402474998/2014_04_147KCg7YuA66qs7Iqk7YSw3239.jpg" alt="" title="">
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-7 text-left">
+                                                <div class="product-name">
+                                                    <a href="#">cyclopes grt</a>
+                                                </div>
+                                                <div>
+                                                    <strong class="input-qty mr10"><input type="text" name="" value="1">EA</strong>
+                                                    <span class="cart-price">$180.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-2 cart-remove">
+                                                <button type="button" onclick="cart.remove('');" title="Remove"><i class="fa fa-times-circle-o"></i></button>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="row2-cart">
                                             <div class="box-cart">
-                                                <span class="text text-right"><strong>Sub-Total : </strong></span>
-                                                <span class="text1 text-right">$450.00</span>
+                                                <span class=""><strong>Sub-Total : </strong></span>
+                                                <span class="">$450.00</span>
                                             </div>
-                                            <div class="button-cart text-right">
-                                                <a class="black-but ats-checkout" href="#"><strong>BUY NOW</strong></a>
+                                            <div class="button-cart">
+                                                <a class="btn" href="#"><strong>BUY<br>NOW</strong></a>
                                             </div>
                                         </div>
                                     </li>
@@ -222,7 +191,7 @@
                             <a href="#">SEARCH</a>
                         </li>
                     </ul>
-                    <div class="d-footer">
+                    <div class="d-footer hidden-sm hidden-xs">
                         <p class="text-center font9">COPYRIGHT © ROUNDER ROUNDER ALL RIGHTS RESERVED</p>
                     </div>
                 </nav>
