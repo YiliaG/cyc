@@ -13,7 +13,8 @@ button:focus {
     outline: 0;
 }
 .main-wrraper {
-    padding-top: 15vh;
+    /*padding-top: 25vh;*/
+    padding-top: 160px;
 }
 .inline-b {
     display: inline-block;
@@ -125,11 +126,11 @@ button:focus {
     min-height: 15vh;
 }
 .vh-2 {
-    min-height: 76vh;
+    min-height: 75vh;
 }
-.vh-3 {
-    min-height: 9vh;
-}
+/*.vh-3 {
+    min-height: 4vh;
+}*/
 .mobile-nav {
     clear: both;
     text-align: center;
@@ -280,8 +281,25 @@ button:focus {
     display: inline-block;
 }
 /*Detail e*/
+/*Login s*/
 
-
+.login-form input.form-control{
+    border: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.login-form h6{
+    text-align: center;
+}
+.login-form .form-group{
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.login-form .check-label:hover{
+    cursor: pointer;
+}
+/*Login e*/
 /*Media Screen s*/
 
 @media (min-width: 769px) {
