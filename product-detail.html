@@ -14,18 +14,6 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.offcanvas.js" type="text/javascript"></script>
     <script src="js/jquery.mlens-1.6.js" type="text/javascript"></script>
-    <style type="text/css">
-        #img_wrapper {
-    position: relative;
-    width: 55%;
-    height: auto;
-    margin: 0 5% 0 auto;
-    border: 12px solid #fff;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(50,50,50 0.5);
-    float: left;
-}
-    </style>
 </head>
 
 <body>
@@ -145,7 +133,7 @@
                         </button>
                     </div>
                 </div>
-                <nav class="navbar-default navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="left-offcanvas">
+                <nav class="navbar-default bg-tran navbar-offcanvas navbar-offcanvas-touch navbar-offcanvas-fade" role="navigation" id="left-offcanvas">
                     <div class="navbar-header close-header visible-sm visible-xs">
                         <button type="button" class="navbar-toggle offcanvas-toggle close-button" data-toggle="offcanvas" data-target="#left-offcanvas">
                             CLOSE
@@ -211,11 +199,172 @@
             </div>
         </header>
         <div class="container">
-            <div class="detail-l">
-                <img id="green_monster" src="http://www.gentlemonster.com/data/item/1402635624/0_sunglasses_thumb_0082.jpg" data-big="http://www.gentlemonster.com/data/item/1449140002/LOVEPUNCH021M2.jpg" data-big2x="images/gear-big@2x.jpg" data-overlay="images/overlay.png" />
-                <!-- <img id="green_monster" src="http://www.gentlemonster.com/data/item/1402636559/0_sunglasses_thumb_0180.jpg" data-big="http://www.gentlemonster.com/data/item/1402636559/2014_04_147KCg7YuA66qs7Iqk7YSw35151.jpg" data-big2x="http://www.gentlemonster.com/data/item/1402636559/2014_04_147KCg7YuA66qs7Iqk7YSw35161.jpg" data-overlay="images/overlay.png" /> -->
+            <div class="detail-l hidden-sm hidden-xs">
+                <div class="img-w">
+                    <img class="green_monster" id="green_monster1" src="images/pro1.jpg" data-big="images/pro1-big.jpg" />
+                </div>
+                <div class="img-w">
+                    <img class="green_monster" id="green_monster2" src="images/pro11.jpg" data-big="images/pro11-big.jpg" />
+                </div>
+                <div class="img-w">
+                    <img class="green_monster" id="green_monster2" src="images/pro12.jpg" data-big="images/pro12-big.jpg" />
+                </div>
             </div>
-            <div class="detail-r"></div>
+            <div id="pro-carousel" class="carousel slide visible-sm visible-xs" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#pro-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#pro-carousel" data-slide-to="1"></li>
+                    <li data-target="#pro-carousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/pro1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/pro11.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/pro12.jpg" alt="...">
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#pro-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#pro-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="detail-r">
+                <div>
+                    <h5>SAMO 01 (P)</h5>
+                    <P class="col10 mtb10">$ 249.00</P>
+                    <div class="form-group required">
+                        <label class="control-label">Pattern</label>
+                        <div id="input-option320">
+                            <div class="pro-radio">
+                                <label>
+                                    <input type="radio" name="" value="">
+                                    <img src="http://www.gentlemonster.com/data/item/1438605328/Samo_d01_2_t.jpg" alt="">
+                                </label>
+                            </div>
+                            <div class="pro-radio">
+                                <label>
+                                    <input type="radio" name="" value="">
+                                    <img src="http://www.gentlemonster.com/data/item/1438605329/Samog1_2_t.jpg" alt="">
+                                </label>
+                            </div>
+                            <div class="pro-radio">
+                                <label>
+                                    <input type="radio" name="" value="">
+                                    <img src="http://www.gentlemonster.com/data/item/1438605329/Samog1_2_t.jpg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visible-sm visible-xs" id="pro-accordion" role="tablist" aria-multiselectable="true">
+                        <div role="tab" id="headingInfo" class="moreInfo">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#pro-accordion" href="#pro-collapse" aria-expanded="false" aria-controls="pro-collapse">
+                                MORE INFORMATION
+                            </a>
+                        </div>
+                        <div id="pro-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingInfo">
+                            <div class="panel-body">
+                                <P>Material : titanium/stainless </P>
+                                <P>Frame : front 147 mm - side 150 mm </P>
+                                <P>Lens : width 54 mm - height 49 mm</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option-w">
+                        <div class="visible-sm visible-xs col-choose" id="col-accordion" role="tablist" aria-multiselectable="true">
+                            <div role="tab" id="headingCol">
+                                <a class="btn btn-default collapsed" data-toggle="collapse" data-parent="#col-accordion" href="#col-collapse" aria-expanded="false" aria-controls="col-collapse">
+                                    COLORS
+                                </a>
+                            </div>
+                            <div id="col-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCol">
+                                <div class="panel-body">
+                                    <div class="pro-col">
+                                        <a href="#" title="">
+                                            <img src="http://www.gentlemonster.com/data/item/1449139871/LOVEPUNCHM01M2_t.jpg" alt="">
+                                        </a>
+                                        <p>&nbsp;</p>
+                                        <!-- <p>OUT OF STOCK</p> -->
+
+                                    </div>
+                                    <div class="pro-col">
+                                        <a href="#" title="">
+                                            <img src="http://www.gentlemonster.com/data/item/1449140114/LOVEPUNCH032M2_t.jpg" alt="">
+                                        </a>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div class="pro-col">
+                                        <a href="#" title="">
+                                            <img src="http://www.gentlemonster.com/data/item/1449139871/LOVEPUNCHM01M2_t.jpg" alt="">
+                                        </a>
+                                        <p>OUT OF STOCK</p>
+                                    </div>
+                                    <div class="pro-col">
+                                        <a href="#" title="">
+                                            <img src="http://www.gentlemonster.com/data/item/1449140114/LOVEPUNCH032M2_t.jpg" alt="">
+                                        </a>
+                                        <p>OUT OF STOCK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dis-tb">
+                            <button type="button" class="btn btn-default">BUY
+                                <br>NOW</button>
+                        </div>
+                    </div>
+                    <div class="mtb10 hidden-sm hidden-xs">
+                        <P>Material : titanium/stainless </P>
+                        <P>Frame : front 147 mm - side 150 mm </P>
+                        <P>Lens : width 54 mm - height 49 mm</P>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="pro-tab list-unstyled hidden-sm hidden-xs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#pro-share" role="tab" data-toggle="tab">Share</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#pro-color" role="tab" data-toggle="tab">Other Color</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content hidden-sm hidden-xs">
+                        <div role="tabpanel" class="tab-pane active" id="pro-share">
+                            <div class="pro-share">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="pro-color">
+                            <div class="pro-col text-left">
+                                <a href="#" title="">
+                                    <img src="http://www.gentlemonster.com/data/item/1449139871/LOVEPUNCHM01M2_t.jpg" alt="">
+                                </a>
+                                <a href="#" title="">
+                                    <img src="http://www.gentlemonster.com/data/item/1449140114/LOVEPUNCH032M2_t.jpg" alt="">
+                                </a>
+                                <a href="#" title="">
+                                    <img src="http://www.gentlemonster.com/data/item/1449139871/LOVEPUNCHM01M2_t.jpg" alt="">
+                                </a>
+                                <a href="#" title="">
+                                    <img src="http://www.gentlemonster.com/data/item/1449140114/LOVEPUNCH032M2_t.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="visible-sm visible-xs">
             <div class="vh-3 visible-sm visible-xs"></div>
@@ -238,27 +387,29 @@
             <p class="text-center font9">COPYRIGHT © ROUNDER ROUNDER ALL RIGHTS RESERVED</p>
         </footer>
     </div>
-   <script type="text/javascript">
-$(document).ready(function()
-{
-    $("#gear").mlens(
-    {
-        imgSrc: $("#gear").attr("data-big"),      // path of the hi-res version of the image
-        imgSrc2x: $("#gear").attr("data-big2x"),  // path of the hi-res @2x version of the image
-                                                  //for retina displays (optional)
-        lensShape: "circle",                // shape of the lens (circle/square)
-        lensSize: ["20%","30%"],            // lens dimensions (in px or in % with respect to image dimensions)
-                                            // can be different for X and Y dimension
-        borderSize: 4,                  // size of the lens border (in px)
-        borderColor: "#fff",            // color of the lens border (#hex)
-        borderRadius: 0,                // border radius (optional, only if the shape is square)
-        imgOverlay: $("#gear").attr("data-overlay"), // path of the overlay image (optional)
-        overlayAdapt: true,    // true if the overlay image has to adapt to the lens size (boolean)
-        zoomLevel: 1,          // zoom level multiplicator (number)
-        responsive: true       // true if mlens has to be responsive (boolean)
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".img-w .green_monster").each(function() {
+            $this = $(this);
+
+            $this.mlens({
+                imgSrc: $this.attr("data-big"), // path of the hi-res version of the image
+
+                //for retina displays (optional)
+                lensShape: "circle", // shape of the lens (circle/square)
+                lensSize: ["20%", "20%"], // lens dimensions (in px or in % with respect to image dimensions)
+                // can be different for X and Y dimension
+                borderSize: 2, // size of the lens border (in px)
+                borderColor: "#fff", // color of the lens border (#hex)
+                borderRadius: 0, // border radius (optional, only if the shape is square)
+                imgOverlay: $this.attr("data-overlay"), // path of the overlay image (optional)
+                overlayAdapt: true, // true if the overlay image has to adapt to the lens size (boolean)
+                zoomLevel: 1, // zoom level multiplicator (number)
+                responsive: true // true if mlens has to be responsive (boolean)
+            });
+        });
     });
-});
-</script>
+    </script>
 </body>
 
 </html>
