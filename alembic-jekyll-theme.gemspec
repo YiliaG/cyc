@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{A Jekyll boilerplate theme designed to be a starting point for any Jekyll website.}
   spec.description   = "A Jekyll boilerplate theme designed to be a starting point for any Jekyll website. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately."
-  spec.homepage      = "https://alembic.darn.es"
+  spec.homepage      = "https://yiliag.github.io/cyc/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
