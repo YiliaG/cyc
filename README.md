@@ -1,4 +1,4 @@
-# [Alembic](https://yiliag.github.io/cyc/)
+# [Alembic](https://yiliag.github.io/jekyll/)
 [![Gem Version](https://badge.fury.io/rb/alembic-jekyll-theme.svg)](https://badge.fury.io/rb/alembic-jekyll-theme)
 
 ⚗ A Jekyll boilerplate theme designed to be a starting point for any Jekyll website.
